@@ -7,6 +7,7 @@ const { Meta } = Card;
 
 const Producto = (props) => {
   return (
+    
     <Card
       style={{
         width: 300,
@@ -18,10 +19,10 @@ const Producto = (props) => {
       actions={[
         <SettingOutlined/>,
         <ModificarDrawer
-          avatar={<Avatar src={props.valor.avatar} />}
+          avatar={<Avatar src={props.valor} />}
           detalle={<img
             alt="example"
-            src={props.valor.avatar}
+            src={props.valor}
           />} />,
         <DetallesModal/>,
       ]}
