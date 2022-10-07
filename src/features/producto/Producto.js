@@ -1,4 +1,4 @@
-import { SettingOutlined } from '@ant-design/icons';
+
 import { Avatar, Card } from 'antd';
 import React from 'react';
 import ModificarDrawer from '../ModificarDrawer';
@@ -17,7 +17,7 @@ const Producto = (props) => {
         src={props.valor.avatar}
       />}
       actions={[
-        <SettingOutlined/>,
+        
         <ModificarDrawer
           avatar={<Avatar src={props.valor} />}
           detalle={<img

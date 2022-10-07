@@ -12,11 +12,12 @@ const ModificarDrawer = (props) => {
   return (
     <>
       <EditOutlined onClick={showDrawer}/>
-      <Drawer title="Basic Drawer" placement="right" onClose={showDrawer} open={open}>
+      <Drawer title="Editar Producto" placement="right" onClose={showDrawer} open={open}>
         {props.avatar}
+        
         <p><input /></p>
         <p><input /></p>
-        {props.detalle}
+
       </Drawer>
     </>
   );
