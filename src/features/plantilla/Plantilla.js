@@ -8,6 +8,8 @@ import {
     UploadOutlined,
     UserOutlined,
     BarChartOutlined,
+    ProfileOutlined,
+
   } from '@ant-design/icons';
   import { Layout, Menu } from 'antd';
   import React, { useState } from 'react';
@@ -26,17 +28,34 @@ import {
             items={[
               {
                 key: '1',
-                icon: <UserOutlined />,
+                icon: <UserOutlined
+                
+                href='' />,
+                
                 label: 'Usuario',
               },
               {
                 key: '2',
-                icon: <BarChartOutlined />,
-                label: 'Estadisticas',
+                icon: <ProfileOutlined 
+                
+                href={ProductoList} />,
+
+                label: 'Productos',
               },
               {
                 key: '3',
-                icon: <UploadOutlined />,
+                icon: <BarChartOutlined
+                
+                href='' />,
+
+                label: 'Estadisticas',
+              },
+              {
+                key: '4',
+                icon: <UploadOutlined
+
+                href='' />,
+
                 label: 'Subir Producto',
               },
             ]}
@@ -63,7 +82,7 @@ import {
               minHeight: 280,
             }}
           >
-            <ProductoList />
+
             
           </Content>
         </Layout>

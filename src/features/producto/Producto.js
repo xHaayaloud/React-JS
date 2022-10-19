@@ -2,7 +2,7 @@
 import { Avatar, Card } from 'antd';
 import React from 'react';
 import ModificarDrawer from '../ModificarDrawer';
-import DetallesModal from '../DetallesModal';
+
 const { Meta } = Card;
 
 const Producto = (props) => {
@@ -14,23 +14,22 @@ const Producto = (props) => {
       }}
       cover={<img
         alt="example"
-        src={props.valor.avatar}
+        src={props.valor.imagenes}
       />}
       actions={[
         
         <ModificarDrawer
-          avatar={<Avatar src={props.valor} />}
+          avatar={<Avatar src={props.valor.imagenes} />}
           detalle={<img
             alt="example"
             src={props.valor}
           />} />,
-        <DetallesModal/>,
       ]}
     >
       <Meta
-        avatar={<Avatar src={props.valor.avatar} />}
+        avatar={<Avatar src={props.valor.imagenes} />}
         title={props.valor.titulo}
-        description={props.valor.descripcion}
+        description={props.valor.precio}
       />
     </Card>
   )
