@@ -1,14 +1,15 @@
 import './Plantilla.css';
-import ProductoList from '../producto/ProductoList';
+import { Link } from "react-router-dom";
+import UsuariosMenu from '../BotonosMenu/usuarios';
 
 
 import {
-    MenuFoldOutlined,
-    MenuUnfoldOutlined,
-    UploadOutlined,
-    UserOutlined,
-    BarChartOutlined,
-    ProfileOutlined,
+  MenuFoldOutlined,
+  MenuUnfoldOutlined,
+  UploadOutlined,
+  UserOutlined,
+  BarChartOutlined,
+  ProfileOutlined,
 
   } from '@ant-design/icons';
   import { Layout, Menu } from 'antd';
@@ -20,45 +21,46 @@ import {
     return (
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
-          <div className="logo" />
+          <div className="logo" />     
+          
           <Menu
-            theme="dark"
-            mode="inline"
-            defaultSelectedKeys={['1']}
-            items={[
-              {
-                key: '1',
-                icon: <UserOutlined
-                
-                href='' />,
-                
-                label: 'Usuario',
-              },
-              {
-                key: '2',
-                icon: <ProfileOutlined 
-                
-                href={ProductoList} />,
-
-                label: 'Productos',
-              },
-              {
-                key: '3',
-                icon: <BarChartOutlined
-                
-                href='' />,
-
-                label: 'Estadisticas',
-              },
-              {
-                key: '4',
-                icon: <UploadOutlined
-
-                href='' />,
-
-                label: 'Subir Producto',
-              },
-            ]}
+              theme="dark"
+              mode="inline"
+              defaultSelectedKeys={['1']}
+              items={[
+                {
+                  key: '1',
+                  icon: <UserOutlined
+                  
+                  href='' />,
+                  
+                  label: 'Usuario',
+                },
+                {
+                  key: '2',
+                  icon: <ProfileOutlined 
+                  
+                   />,
+  
+                  label: 'Productos',
+                },
+                {
+                  key: '3',
+                  icon: <BarChartOutlined
+                  
+                  href='' />,
+  
+                  label: 'Estadisticas',
+                },
+                {
+                  key: '4',
+                  icon: <UploadOutlined
+  
+                  href='' />,
+  
+                  label: 'Subir Producto',
+                },
+              ]}     
           />
         </Sider>
         <Layout className="site-layout">
@@ -82,7 +84,8 @@ import {
               minHeight: 280,
             }}
           >
-
+            
+            
             
           </Content>
         </Layout>
