@@ -1,6 +1,7 @@
 import './Plantilla.css';
 import { Link } from "react-router-dom";
 import UsuariosMenu from '../BotonosMenu/usuarios';
+import ProductosMenu from '../BotonosMenu/productos';
 
 
 import {
@@ -30,19 +31,13 @@ import {
               items={[
                 {
                   key: '1',
-                  icon: <UserOutlined
-                  
-                  href='' />,
-                  
-                  label: 'Usuario',
+
+                  href: {UsuariosMenu},
+
                 },
                 {
                   key: '2',
-                  icon: <ProfileOutlined 
-                  
-                   />,
-  
-                  label: 'Productos',
+                  href: {ProductosMenu},
                 },
                 {
                   key: '3',
